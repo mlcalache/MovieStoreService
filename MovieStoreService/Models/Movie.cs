@@ -9,6 +9,8 @@ namespace MovieStoreService.Models
         public string Name { get; set; }
         public Country Nationality { get; set; }
         public int Year { get; set; }
-        public Category Category { get; set; }
+        public Gender Category { get; set; }
+        public List<Producer> Producers { get; set; }
+        public List<Director> Directors { get; set; }
     }
 }

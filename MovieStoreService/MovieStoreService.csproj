@@ -77,10 +77,12 @@
     </Compile>
     <Compile Include="Models\Actor.cs" />
     <Compile Include="Models\BaseModel.cs" />
-    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\Director.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\Award.cs" />
+    <Compile Include="Models\Producer.cs" />
     <Compile Include="MovieStoreService.asmx.cs">
       <DependentUpon>MovieStoreService.asmx</DependentUpon>
       <SubType>Component</SubType>

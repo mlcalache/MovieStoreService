@@ -34,16 +34,16 @@ namespace MovieStoreService
         }
 
         [WebMethod]
-        public List<Category> GetAllCategories()
+        public List<Gender> GetAllGenders()
         {
             throw new NotImplementedException();
         }
 
-        [WebMethod]
-        public List<Country> GetAllCountries()
-        {
-            throw new NotImplementedException();
-        }
+        //[WebMethod]
+        //public List<Country> GetAllCountries()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         [WebMethod]
         public List<Movie> GetAllMovies()
@@ -52,7 +52,49 @@ namespace MovieStoreService
         }
 
         [WebMethod]
-        public List<Movie> GetAllMoviesByCategory(int categoryId)
+        public List<Movie> GetAllMoviesByActorName(string actorName)
+        {
+            throw new NotImplementedException();
+        }
+
+        //[WebMethod]
+        //public List<Movie> GetAllMoviesByCategory(int categoryId)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        [WebMethod]
+        public List<Movie> GetAllMoviesByCategoryName(string categoryName)
+        {
+            throw new NotImplementedException();
+        }
+
+        //[WebMethod]
+        //public List<Movie> GetAllMoviesByCountry(int countryId)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        [WebMethod]
+        public List<Movie> GetAllMoviesByCountryName(string countryName)
+        {
+            throw new NotImplementedException();
+        }
+
+        [WebMethod]
+        public List<Movie> GetAllMoviesByDirectorName(string directorName)
+        {
+            throw new NotImplementedException();
+        }
+
+        [WebMethod]
+        public List<Movie> GetAllMoviesByGenderName(string genderName)
+        {
+            throw new NotImplementedException();
+        }
+
+        [WebMethod]
+        public List<Movie> GetAllMoviesByProducerName(string producerName)
         {
             throw new NotImplementedException();
         }
@@ -76,10 +118,16 @@ namespace MovieStoreService
         }
 
         [WebMethod]
-        public Country RegisterNewCountry(string countryName)
+        public Movie GetMovieByMovieName(int movieName)
         {
             throw new NotImplementedException();
         }
+
+        //[WebMethod]
+        //public Country RegisterNewCountry(string countryName)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         [WebMethod]
         public Movie RegisterNewMovie(Movie movie)

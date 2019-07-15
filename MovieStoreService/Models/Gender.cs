@@ -1,6 +1,6 @@
 ﻿namespace MovieStoreService.Models
 {
-    public class Category : BaseModel
+    public class Gender : BaseModel
     {
         public string Name { get; set; }
     }
