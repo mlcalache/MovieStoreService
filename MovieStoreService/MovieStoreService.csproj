@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="MovieStoreServiceSimplified.asmx" />
     <Content Include="MovieStoreService.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -83,6 +84,10 @@
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\Award.cs" />
     <Compile Include="Models\Producer.cs" />
+    <Compile Include="MovieStoreServiceSimplified.asmx.cs">
+      <DependentUpon>MovieStoreServiceSimplified.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MovieStoreService.asmx.cs">
       <DependentUpon>MovieStoreService.asmx</DependentUpon>
       <SubType>Component</SubType>
