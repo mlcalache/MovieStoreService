@@ -13,31 +13,31 @@ namespace MovieStoreService
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line.
     // [System.Web.Script.Services.ScriptService]
-    public class MovieStoreService : System.Web.Services.WebService
+    public class MovieStoreService : WebService
     {
-        [WebMethod]
-        public void ChangeMovieCategory(int movieId, int categoryId)
-        {
-            throw new NotImplementedException();
-        }
+        //[WebMethod]
+        //public void ChangeMovieCategory(int movieId, int categoryId)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        [WebMethod]
-        public void ChangeMovieNationality(int movieId, int countryId)
-        {
-            throw new NotImplementedException();
-        }
+        //[WebMethod]
+        //public void ChangeMovieNationality(int movieId, int countryId)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        [WebMethod]
-        public List<Award> GetAllAwards()
-        {
-            throw new NotImplementedException();
-        }
+        //[WebMethod]
+        //public List<Award> GetAllAwards()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        [WebMethod]
-        public List<Gender> GetAllGenders()
-        {
-            throw new NotImplementedException();
-        }
+        //[WebMethod]
+        //public List<Gender> GetAllGenders()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         //[WebMethod]
         //public List<Country> GetAllCountries()
@@ -51,11 +51,11 @@ namespace MovieStoreService
             throw new NotImplementedException();
         }
 
-        [WebMethod]
-        public List<Movie> GetAllMoviesByActorName(string actorName)
-        {
-            throw new NotImplementedException();
-        }
+        //[WebMethod]
+        //public List<Movie> GetAllMoviesByActorName(string actorName)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         //[WebMethod]
         //public List<Movie> GetAllMoviesByCategory(int categoryId)
@@ -64,7 +64,7 @@ namespace MovieStoreService
         //}
 
         [WebMethod]
-        public List<Movie> GetAllMoviesByCategoryName(string categoryName)
+        public List<Movie> GetAllMoviesByCategory(string category)
         {
             throw new NotImplementedException();
         }
@@ -75,53 +75,59 @@ namespace MovieStoreService
         //    throw new NotImplementedException();
         //}
 
+        //[WebMethod]
+        //public List<Movie> GetAllMoviesByCountryName(string countryName)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //[WebMethod]
+        //public List<Movie> GetAllMoviesByDirectorName(string directorName)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //[WebMethod]
+        //public List<Movie> GetAllMoviesByProducerName(string producerName)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //[WebMethod]
+        //public List<Award> GetAwardsByMovie(int movieId)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
         [WebMethod]
-        public List<Movie> GetAllMoviesByCountryName(string countryName)
+        public List<Award> GetAwardsByMovie(string movie)
         {
             throw new NotImplementedException();
         }
 
+        //[WebMethod]
+        //public List<Actor> GetCastByMovie(int movieId)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
         [WebMethod]
-        public List<Movie> GetAllMoviesByDirectorName(string directorName)
+        public List<Actor> GetCastByMovie(string movie)
         {
             throw new NotImplementedException();
         }
 
-        [WebMethod]
-        public List<Movie> GetAllMoviesByGenderName(string genderName)
-        {
-            throw new NotImplementedException();
-        }
+        //[WebMethod]
+        //public Movie GetMovie(int movieId)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        [WebMethod]
-        public List<Movie> GetAllMoviesByProducerName(string producerName)
-        {
-            throw new NotImplementedException();
-        }
-
-        [WebMethod]
-        public List<Award> GetAwardsByMovie(int movieId)
-        {
-            throw new NotImplementedException();
-        }
-
-        [WebMethod]
-        public List<Actor> GetCastByMovie(int movieId)
-        {
-            throw new NotImplementedException();
-        }
-
-        [WebMethod]
-        public Movie GetMovie(int movieId)
-        {
-            throw new NotImplementedException();
-        }
-
-        [WebMethod]
-        public Movie GetMovieByMovieName(int movieName)
-        {
-            throw new NotImplementedException();
-        }
+        //[WebMethod]
+        //public Movie GetMovieByMovieName(string movieName)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         //[WebMethod]
         //public Country RegisterNewCountry(string countryName)
@@ -140,21 +146,27 @@ namespace MovieStoreService
             throw new NotImplementedException();
         }
 
+        //[WebMethod]
+        //public bool RemoveMovie(int movieId)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
         [WebMethod]
-        public bool RemoveMovie(int movieId)
+        public bool RemoveMovie(string movie)
         {
             throw new NotImplementedException();
         }
 
-        [WebMethod]
-        public Movie UpdateMovie(int movieId, Movie movie)
-        {
-            if (movie == null)
-            {
-                throw new ArgumentNullException(nameof(movie));
-            }
+        //[WebMethod]
+        //public Movie UpdateMovie(int movieId, Movie movie)
+        //{
+        //    if (movie == null)
+        //    {
+        //        throw new ArgumentNullException(nameof(movie));
+        //    }
 
-            throw new NotImplementedException();
-        }
+        //    throw new NotImplementedException();
+        //}
     }
 }
