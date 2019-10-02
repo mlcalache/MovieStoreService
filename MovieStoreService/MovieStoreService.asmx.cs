@@ -64,7 +64,7 @@ namespace MovieStoreService
         //}
 
         [WebMethod]
-        public List<Movie> GetAllMoviesByCategory(string category)
+        public List<Movie> GetAllMoviesByGender(string gender)
         {
             throw new NotImplementedException();
         }
